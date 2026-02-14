@@ -3,7 +3,7 @@ title: "麻薬ポンプ液量計算ツール"
 date: "2026-02-12"
 category: "計算ツール"
 tags: ["ツール", "麻薬", "ポンプ計算"]
-published: true
+published: false
 description: "麻薬持続注入ポンプの流量、濃度、必要液量を計算します。"
 ---
 

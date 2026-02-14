@@ -12,6 +12,7 @@ export default function Header() {
             borderTop: 'none',
             marginBottom: '2rem'
         }}>
+
             <div className="container" style={{ minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
                 <h1 style={{ fontSize: '1.2rem', fontWeight: '800' }}>
                     <Link href="/" style={{ color: 'hsl(var(--primary))', textDecoration: 'none' }}>

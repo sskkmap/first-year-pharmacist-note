@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Link from 'next/link';
 import ArticleList from '../components/homepege/ArticleList';
 import Header from '../components/Header';
@@ -6,10 +8,7 @@ import SearchInput from '../components/SearchInput';
 import { getArticlesForSearch } from '../lib/articles';
 
 export default async function SearchPage({ searchParams }) {
-    // searchParams is a promise in Next.js 15+, but let's check current version.
-    // Assuming Next.js App Router. safer to await it if it's a promise, but straightforward property access usually works in older versions.
-    // Recent Next.js changes make searchParams a promise.
-    const { q } = await searchParams || {};
+    const { q } = searchParams ?? {};
 
     const matchedArticles = q ? getArticlesForSearch(q) : [];
 

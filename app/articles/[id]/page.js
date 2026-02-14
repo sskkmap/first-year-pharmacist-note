@@ -1,5 +1,6 @@
-//ここで各記事をＭＤからｈｔｍｌへ変更
 export const dynamic = "force-dynamic";
+
+// ここで各記事をMDからHTMLへ変更
 import { getArticleData, getSortedArticlesData } from '../../lib/articles';
 import Link from 'next/link';
 import ArticleContent from '../../components/ArticleContent';
@@ -8,14 +9,14 @@ import { categories } from '../../data/mockData';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-// 静的エクスポート用: 全記事のパスを事前生成
+/*
 export function generateStaticParams() {
     const articles = getSortedArticlesData();
     return articles.map((article) => ({
         id: article.id,
     }));
 }
-
+*/
 export default async function ArticlePage({ params, searchParams }) {
     const { id } = await params;
     const articleData = await getArticleData(id);
