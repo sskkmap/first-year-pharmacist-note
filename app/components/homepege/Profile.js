@@ -15,8 +15,16 @@ export default function Profile() {
                 <img
                     src={profileData.avatar}
                     alt={profileData.name}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{
+                        width: '93%',
+                        height: '93%',
+                        objectFit: 'cover',
+                        objectPosition: '50% 50%',
+                        transform: 'scale(1.1)',
+
+                    }}
                 />
+
             </div>
             <h1 className="title-gradient" style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
                 {profileData.name}

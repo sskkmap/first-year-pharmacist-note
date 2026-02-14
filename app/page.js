@@ -4,7 +4,10 @@ import CategoryList from './components/homepege/CategoryList';
 import ArticleList from './components/homepege/ArticleList';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SearchInput from './components/SearchInput';
+import RandomArticleLinks from './components/homepege/RandomArticleLinks';
 import { getSortedArticlesData } from './lib/articles';
+import { categories } from './data/mockData';
 
 export default async function HomePage() {
   const allArticles = getSortedArticlesData();
@@ -19,8 +22,34 @@ export default async function HomePage() {
 
       <div className="container">
         <Profile />
-        <CategoryList />
-        <ArticleList articles={allArticles} />
+        <div style={{ marginBottom: '2rem' }}>
+          <SearchInput />
+        </div>
+        <CategoryList articles={allArticles} />
+
+        <ArticleList articles={allArticles.slice(0, 6)} title="最新記事" viewMoreLink="/categories/all" /> {/* Limited to 6 for "Latest" */}
+        {/* Actually, existing code passed allArticles. Let's keep it but maybe limit it if we show categories below? 
+            User request: "最新記事の下にカテゴリ毎の記事を最新記事と同様に表示したい".
+            So keep allArticles (Latest) as is, maybe limit to 5 if it gets too long, but user didn't ask to limit Latest.
+        */}
+
+        <div style={{ marginTop: '3rem' }}>
+          {categories.map(category => {
+            const categoryArticles = allArticles.filter(a => a.category === category.name).slice(0, 4);
+            if (categoryArticles.length === 0) return null;
+
+            return (
+              <div key={category.id} style={{ marginBottom: '3rem' }}>
+                <ArticleList
+                  articles={categoryArticles}
+                  title={`${category.name}`}
+                  viewMoreLink={`/categories/${category.name}`}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <RandomArticleLinks articles={allArticles} />
       </div>
 
       <Footer />

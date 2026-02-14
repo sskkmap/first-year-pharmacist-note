@@ -19,9 +19,9 @@ export default function Header() {
                     </Link>
                 </h1>
                 <nav>
-                    <a href="#" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>このサイトについて</a>
-                    <a href="#" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>画像で探す</a>
-                    <a href="#" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>プライバシーポリシー</a>
+                    <Link href="/about" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>このサイトについて</Link>
+                    <Link href="/image-search" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>画像で探す</Link>
+                    <Link href="/privacy" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>プライバシーポリシー</Link>
                 </nav>
             </div>
         </header>

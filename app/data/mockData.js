@@ -14,7 +14,10 @@ export const categories = [
   { id: "immune", name: "免疫・膠原病", color: "hsl(300, 60%, 55%)" },
   { id: "heme", name: "血液", color: "hsl(350, 65%, 55%)" },
   { id: "ped", name: "小児科", color: "hsl(200, 80%, 55%)" },
+  { id: "tool", name: "計算ツール", color: "hsla(64, 100%, 40%, 1.00)" },
+  { id: "admin", name: "医療事務", color: "hsla(0, 0%, 0%, 1.00)" },
   { id: "other", name: "その他", color: "hsl(210, 20%, 50%)" },
+
 ];
 
 

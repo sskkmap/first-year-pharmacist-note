@@ -1,13 +1,31 @@
+//カテゴリによって表示する記事を変更
 import Link from 'next/link';
 import ArticleList from '../../components/homepege/ArticleList';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { getArticlesByCategory } from '../../lib/articles';
+import { getArticlesByCategory, getSortedArticlesData } from '../../lib/articles';
+import { categories } from '../../data/mockData';
+
+// 静的エクスポート用: 全カテゴリのパスを事前生成
+export function generateStaticParams() {
+    const allCategories = categories.map((c) => ({
+        category: c.name,
+    }));
+    // 'all' カテゴリも追加
+    allCategories.push({ category: 'all' });
+    return allCategories;
+}
 
 export default async function CategoryPage({ params }) {
     const { category } = await params;
     const decodedCategory = decodeURIComponent(category);
-    const categoryArticles = getArticlesByCategory(decodedCategory);
+
+    let categoryArticles;
+    if (decodedCategory === 'all') {
+        categoryArticles = getSortedArticlesData();
+    } else {
+        categoryArticles = getArticlesByCategory(decodedCategory);
+    }
 
     return (
         <main style={{
