@@ -1,4 +1,5 @@
 //ここで各記事をＭＤからｈｔｍｌへ変更
+export const dynamic = "force-dynamic";
 import { getArticleData, getSortedArticlesData } from '../../lib/articles';
 import Link from 'next/link';
 import ArticleContent from '../../components/ArticleContent';
