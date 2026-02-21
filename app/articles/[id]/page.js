@@ -3,11 +3,13 @@ export const dynamic = "force-dynamic";
 // ここで各記事をMDからHTMLへ変更
 import { getArticleData, getSortedArticlesData } from '../../lib/articles';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import ArticleContent from '../../components/ArticleContent';
 import DaysCalc from '../../components/tools/DaysCalc';
 import { categories } from '../../data/mockData';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import VisitManagement from '../../components/tools/VisitManagement';
 
 /*
 export function generateStaticParams() {
@@ -20,6 +22,10 @@ export function generateStaticParams() {
 export default async function ArticlePage({ params, searchParams }) {
     const { id } = await params;
     const articleData = await getArticleData(id);
+
+    if (!articleData) {
+        notFound();
+    }
 
     // Draft / Coming Soon Logic
     const isPublished = articleData.published;
@@ -163,6 +169,7 @@ export default async function ArticlePage({ params, searchParams }) {
 
                 {/* Article Content */}
                 {id === 'days-calc' && <DaysCalc />}
+                {id === 'visit-management' && <VisitManagement />}
                 <ArticleContent html={articleData.contentHtml} />
             </article>
             <div className="container" style={{ minHeight: '60px', display: 'flex', alignItems: 'center' }}>

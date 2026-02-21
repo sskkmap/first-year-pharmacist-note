@@ -1,7 +1,7 @@
 ---
 title: "日数計算ツール"
 date: "2026-02-12"
-category: "計算ツール"
+category: "ツール"
 tags: ["ツール", "換算"]
 published: false
 description: "何日後は何月何日かを確認できるツールです。"

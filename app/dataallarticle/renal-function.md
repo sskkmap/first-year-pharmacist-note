@@ -1,7 +1,7 @@
 ---
 title: "腎機能計算ツール (CCr / eGFR)"
 date: "2026-02-12"
-category: "計算ツール"
+category: "ツール"
 tags: ["ツール", "腎機能", "eGFR", "CCr"]
 published: false
 description: "Cockcroft-Gault式や日本人のeGFR推算式を用いて、腎機能を算出します。"

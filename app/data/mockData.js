@@ -1,7 +1,7 @@
 export const profileData = {
-  name: "かいかい",
+  name: "あおさん",
   role: "薬剤師5年目",
-  bio: "「処方箋から読む」をテーマに、若手薬剤師向けの現場で使える実践知識を発信中。ガイドラインを一歩踏み込んだ解釈で。",
+  bio: "現役調剤薬局の薬剤師、私自身も使いたいなと思えるツールの開発や「処方箋から病気を読む」をテーマに、若手薬剤師向けの現場で使える実践知識を発信中。",
   avatar: "/placeholder-avatar.png", // Will need a real image or a generated one
 };
 

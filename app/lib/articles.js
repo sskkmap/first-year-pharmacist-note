@@ -22,8 +22,8 @@ export function getSortedArticlesData() {
     // Get file names under /dataallarticle
     const fileNames = fs.readdirSync(articlesDirectory);
     const allArticlesData = fileNames.map((fileName) => {
-        // Remove ".md" from file name to get id
-        const id = fileName.replace(/\.md$/, '');
+        // Remove ".md" from file name to get id and normalize to lowercase
+        const id = fileName.replace(/\.md$/, '').toLowerCase();
 
         // Read markdown file as string
         const fullPath = path.join(articlesDirectory, fileName);
@@ -50,9 +50,14 @@ export function getSortedArticlesData() {
         }
     });
 }
-
 export async function getArticleData(id) {
-    const fullPath = path.join(articlesDirectory, `${id}.md`);
+    const normalizedId = id.toLowerCase();
+    const fullPath = path.join(articlesDirectory, `${normalizedId}.md`);
+
+    if (!fs.existsSync(fullPath)) {
+        return null;
+    }
+
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section

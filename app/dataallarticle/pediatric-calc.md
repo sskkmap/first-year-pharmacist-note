@@ -1,7 +1,7 @@
 ---
 title: "小児用量計算ツール"
 date: "2026-02-12"
-category: "計算ツール"
+category: "ツール"
 tags: ["ツール", "小児", "粉薬", "シロップ"]
 published: false
 description: "小児の体重に基づいた薬剤の投与量（散剤、液剤）を計算します。"
