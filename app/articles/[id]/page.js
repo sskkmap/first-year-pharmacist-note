@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 // ここで各記事をMDからHTMLへ変更
 import { getArticleData, getSortedArticlesData } from '../../lib/articles';
@@ -11,14 +11,12 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import VisitManagement from '../../components/tools/VisitManagement';
 
-/*
 export function generateStaticParams() {
     const articles = getSortedArticlesData();
     return articles.map((article) => ({
         id: article.id,
     }));
 }
-*/
 export default async function ArticlePage({ params, searchParams }) {
     const { id } = await params;
     const articleData = await getArticleData(id);
@@ -30,7 +28,8 @@ export default async function ArticlePage({ params, searchParams }) {
     // Draft / Coming Soon Logic
     const isPublished = articleData.published;
 
-    const { preview } = await searchParams;
+    // Static generation doesn't support searchParams at build time
+    const preview = searchParams?.preview;
     const isSecretPreview = preview === 'secret';
     const isDev = process.env.NODE_ENV === 'development';
 
