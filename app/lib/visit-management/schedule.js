@@ -45,31 +45,43 @@ export function generatePatientSchedule(patient, startDate, endDate) {
 function isScheduledDay(patient, date, baseDate) {
     // 1. 単発訪問(single)の場合：日付が一致するかのみ判定
     if (patient.type === 'single') {
-        return formatDateLocal(date) === patient.targetDate;
+        const targetDate = patient.targetDate;
+        return formatDateLocal(date) === targetDate;
     }
 
     // 2. 定期訪問(periodic)の場合
-    // 曜日の判定
+    // 曜日の判定 (0:日, 1:月, ...)
     if (date.getDay() !== patient.dayOfWeek) return false;
 
-    // 第N週の判定 (複数指定に対応)
-    // patient.weekNumbers = [1, 3] のような形式を想定
+    // --- 第N週の判定 (Calendar-based) ---
+    // patient.weekNumbers = [1, 3] のような形式がある場合はこちらを優先
     if (patient.weekNumbers && patient.weekNumbers.length > 0) {
+        // その月の第何曜日か (1〜5)
         const weekNum = Math.ceil(date.getDate() / 7);
-        if (!patient.weekNumbers.includes(weekNum)) return false;
-    } else if (patient.weekNumber && patient.weekNumber !== 'every') {
-        const weekNum = Math.ceil(date.getDate() / 7);
-        if (weekNum !== parseInt(patient.weekNumber)) return false;
+        if (patient.weekNumbers.includes(weekNum)) {
+            return true; // 該当する週なら訪問日
+        }
+        return false; // 該当しない週なら除外
     }
 
-    // 間隔（週）の判定 (weekNumbers指定がない場合のみ有効とするのが一般的)
-    if (!patient.weekNumbers || patient.weekNumbers.length === 0) {
-        if (patient.intervalWeeks > 1) {
-            const diffTime = Math.abs(date - baseDate);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            const diffWeeks = Math.floor(diffDays / 7);
-            if (diffWeeks % patient.intervalWeeks !== 0) return false;
+    // --- 特定の一つの週指定 (互換性用) ---
+    if (patient.weekNumber && patient.weekNumber !== 'every') {
+        const weekNum = Math.ceil(date.getDate() / 7);
+        if (weekNum === parseInt(patient.weekNumber)) {
+            return true;
         }
+        return false;
+    }
+
+    // --- 間隔（週）の判定 (Interval-based) ---
+    // 毎週(every)または weekNumbers指定がない場合のみ、特定の日数間隔を計算
+    if (patient.intervalWeeks > 1) {
+        const diffTime = date.getTime() - baseDate.getTime();
+        const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+        const diffWeeks = Math.floor(diffDays / 7);
+
+        // 基準日から intervalWeeks ごとに判定
+        if (diffWeeks % patient.intervalWeeks !== 0) return false;
     }
 
     return true;

@@ -191,12 +191,9 @@ export default function VisitManagement() {
                 weekNumbers: weekNumbers,
                 // 下換性のためのweekNumber (最初の1つ)
                 weekNumber: weekNumbers[0] || 'every',
-                intervalWeeks: weekNumbers.length > 0 ? (weekNumbers.includes(1) && weekNumbers.includes(2) ? 2 : 1) : 1,
+                intervalWeeks: 1, // 第N週指定がある場合は1で固定し、スケジュールロジック側に任せる
                 startBaseDate: fd.get('startBaseDate')
             };
-            // ユーザー要望の特定の組み合わせによる自動設定
-            if (weekNumbers.length === 2 && weekNumbers.includes(1) && weekNumbers.includes(3)) patient.intervalWeeks = 2;
-            if (weekNumbers.length === 2 && weekNumbers.includes(2) && weekNumbers.includes(4)) patient.intervalWeeks = 2;
 
         } else {
             // 単発
