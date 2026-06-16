@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 //ホームページ
 import Profile from './components/homepege/Profile';
 import CategoryList from './components/homepege/CategoryList';
@@ -50,7 +52,7 @@ export default async function HomePage() {
 
         <div style={{ marginTop: '3rem' }}>
           {categories.map(category => {
-            const categoryArticles = allArticles.filter(a => a.category === category.name).slice(0, 4);
+            const categoryArticles = allArticles.filter(a => a.category === category.name).slice(0, 6);
             if (categoryArticles.length === 0) return null;
 
             return (

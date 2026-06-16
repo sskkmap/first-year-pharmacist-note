@@ -8,7 +8,8 @@ import SearchInput from '../components/SearchInput';
 import { getArticlesForSearch } from '../lib/articles';
 
 export default async function SearchPage({ searchParams }) {
-    const { q } = searchParams ?? {};
+    const params = await searchParams;
+    const { q } = params ?? {};
 
     const matchedArticles = q ? getArticlesForSearch(q) : [];
 
@@ -35,7 +36,7 @@ export default async function SearchPage({ searchParams }) {
                 </div>
 
                 {matchedArticles.length > 0 ? (
-                    <ArticleList articles={matchedArticles} title="該当記事一覧" />
+                    <ArticleList articles={matchedArticles} title="該当記事一覧" horizontalScroll={false} />
                 ) : (
                     <div style={{ textAlign: 'center', padding: '3rem', opacity: 0.6 }}>
                         <p>お探しの記事は見つかりませんでした。</p>

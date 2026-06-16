@@ -10,7 +10,20 @@ import rehypeSlug from 'rehype-slug';
 import rehypeStringify from 'rehype-stringify';
 import GithubSlugger from 'github-slugger';
 
-const articlesDirectory = path.join(process.cwd(), 'public/data-articles');
+let articlesDirectory = path.join(process.cwd(), 'data-articles');
+
+// 本番環境（standaloneなど）でカレントディレクトリ基準のディレクトリが見つからない場合のフォールバック
+if (!fs.existsSync(articlesDirectory)) {
+    const standalonePath = path.join(process.cwd(), '.next/standalone/data-articles');
+    if (fs.existsSync(standalonePath)) {
+        articlesDirectory = standalonePath;
+    } else {
+        const relativePath = path.join(__dirname, '../../data-articles');
+        if (fs.existsSync(relativePath)) {
+            articlesDirectory = relativePath;
+        }
+    }
+}
 
 export function getSortedArticlesData() {
     // Return empty array if directory doesn't exist
@@ -50,131 +63,160 @@ export function getSortedArticlesData() {
 
     // Sort posts by date
     return allArticlesData.sort((a, b) => {
-        if (a.date < b.date) {
+        const dateA = (a.date || '').replace(/\./g, '-');
+        const dateB = (b.date || '').replace(/\./g, '-');
+        
+        if (dateA < dateB) {
             return 1;
-        } else {
+        } else if (dateA > dateB) {
             return -1;
+        } else {
+            // 日付が同じ場合はファイル名(id)で並べる
+            if (a.id < b.id) {
+                return 1;
+            } else if (a.id > b.id) {
+                return -1;
+            }
+            return 0;
         }
     });
 }
 export async function getArticleData(id) {
-    const normalizedId = id.toLowerCase();
-    const fullPath = path.join(articlesDirectory, `${normalizedId}.md`);
+    try {
+        const normalizedId = id.toLowerCase();
+        const fullPath = path.join(articlesDirectory, `${normalizedId}.md`);
+        
+        console.log(`[DEBUG - getArticleData] articlesDirectory path: "${articlesDirectory}"`);
+        console.log(`[DEBUG - getArticleData] Target file path: "${fullPath}"`);
+        
+        const dirExists = fs.existsSync(articlesDirectory);
+        const fileExists = fs.existsSync(fullPath);
+        console.log(`[DEBUG - getArticleData] Directory exists: ${dirExists}, File exists: ${fileExists}`);
 
-    if (!fs.existsSync(fullPath)) {
-        return null;
-    }
-
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    // Extract TOC
-    const slugger = new GithubSlugger();
-    const toc = [];
-    const lines = matterResult.content.split('\n');
-
-    // Simple regex to catch headings (ignores code blocks for simplicity, but robust enough for this use case)
-    lines.forEach(line => {
-        const match = line.match(/^(#{2,3})\s+(.*)/);
-        if (match) {
-            const level = match[1].length;
-            // Strip markdown link formatting from TOC text
-            let text = match[2].trim().replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
-            // Also strip any HTML tags if present
-            text = text.replace(/<[^>]*>?/gm, '');
-            const id = slugger.slug(text);
-            toc.push({ level, text, id });
+        if (!fileExists) {
+            console.warn(`[DEBUG - getArticleData] File not found: "${fullPath}"`);
+            return null;
         }
-    });
 
-    // Use remark/rehype to convert markdown into HTML string with IDs
-    const processedContent = await remark()
-        .use(remarkGfm)
-        .use(remarkAlert)
-        .use(remarkRehype, { allowDangerousHtml: true }) // Parse to HTML AST
-        .use(rehypeSlug) // Add IDs to headings
-        .use(rehypeStringify, { allowDangerousHtml: true }) // Serialize back to HTML string
-        .process(matterResult.content);
+        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        console.log(`[DEBUG - getArticleData] File read successfully. Character length: ${fileContents.length}`);
 
-    let contentHtml = processedContent.toString();
+        // Use gray-matter to parse the post metadata section
+        const matterResult = matter(fileContents);
+        console.log(`[DEBUG - getArticleData] parsed matter metadata: ${JSON.stringify(matterResult.data)}`);
 
-    // 1. Wrap tables for scrolling and 2. Automatically link drug names in specific columns
-    // We use a more sophisticated approach to target specific columns
-    const tableRegex = /<table[^>]*>([\s\S]*?)<\/table>/g;
-    contentHtml = contentHtml.replace(tableRegex, (match) => {
-        // Find header to identify indices of drug columns
-        const headerMatch = match.match(/<th[^>]*>([\s\S]*?)<\/th>/g);
-        if (!headerMatch) return `<div class="table-wrapper">${match}</div>`;
+        // Extract TOC
+        const slugger = new GithubSlugger();
+        const toc = [];
+        const lines = matterResult.content.split('\n');
 
-        const drugColumnIndices = headerMatch.reduce((acc, th, index) => {
-            const text = th.replace(/<[^>]*>/g, '').trim();
-            if (/医薬品名|一般名|薬剤名|商品名/.test(text)) {
-                acc.push(index);
+        // Simple regex to catch headings (ignores code blocks for simplicity, but robust enough for this use case)
+        lines.forEach(line => {
+            const match = line.match(/^(#{2,3})\s+(.*)/);
+            if (match) {
+                const level = match[1].length;
+                // Strip markdown link formatting from TOC text
+                let text = match[2].trim().replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+                // Also strip any HTML tags if present
+                text = text.replace(/<[^>]*>?/gm, '');
+                const id = slugger.slug(text);
+                toc.push({ level, text, id });
             }
-            return acc;
-        }, []);
+        });
+        console.log(`[DEBUG - getArticleData] TOC extracted: ${toc.length} headings found.`);
 
-        if (drugColumnIndices.length === 0) return `<div class="table-wrapper">${match}</div>`;
+        // Use remark/rehype to convert markdown into HTML string with IDs
+        console.log(`[DEBUG - getArticleData] Starting markdown to HTML conversion with remark/rehype...`);
+        const processedContent = await remark()
+            .use(remarkGfm)
+            .use(remarkAlert)
+            .use(remarkRehype, { allowDangerousHtml: true }) // Parse to HTML AST
+            .use(rehypeSlug) // Add IDs to headings
+            .use(rehypeStringify, { allowDangerousHtml: true }) // Serialize back to HTML string
+            .process(matterResult.content);
 
-        // Process rows and cells
-        let processedTable = match;
-        const trRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/g;
-        let rowIndex = 0;
+        let contentHtml = processedContent.toString();
+        console.log(`[DEBUG - getArticleData] HTML conversion completed. HTML length: ${contentHtml.length}`);
 
-        processedTable = processedTable.replace(trRegex, (trMatch) => {
-            // Skip header row
-            if (trMatch.includes('<th')) {
-                rowIndex++;
-                return trMatch;
-            }
+        // 1. Wrap tables for scrolling and 2. Automatically link drug names in specific columns
+        // We use a more sophisticated approach to target specific columns
+        const tableRegex = /<table[^>]*>([\s\S]*?)<\/table>/g;
+        contentHtml = contentHtml.replace(tableRegex, (match) => {
+            // Find header to identify indices of drug columns
+            const headerMatch = match.match(/<th[^>]*>([\s\S]*?)<\/th>/g);
+            if (!headerMatch) return `<div class="table-wrapper">${match}</div>`;
 
-            const tdRegex = /<td[^>]*>([\s\S]*?)<\/td>/g;
-            let colIndex = 0;
-            const processedTr = trMatch.replace(tdRegex, (tdMatch, tdContent) => {
-                const currentAnchorCol = colIndex;
-                colIndex++;
-
-                if (drugColumnIndices.includes(currentAnchorCol)) {
-                    // Strip all existing HTML tags from the content first to avoid splitting tags like <strong>
-                    const textContent = tdContent.replace(/<[^>]*>/g, '');
-
-                    // Split content by separators (e.g., " / ", "／", "・", "(", ")", "（", "）")
-                    // Use a regex that captures the separators so we can preserve them if needed, 
-                    // or just filter them out for linking.
-                    const parts = textContent.split(/([\/／・（）\(\)])/);
-                    const linkedParts = parts.map(part => {
-                        // If it's a separator, keep it as is
-                        if (/^[\/／・（）\(\)]$/.test(part)) return part;
-
-                        const text = part.trim();
-                        if (text && text.length > 1) {
-                            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(text)}+添付文書`;
-                            return `<a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="drug-search-link">${part}</a>`;
-                        }
-                        return part;
-                    });
-                    return tdMatch.replace(tdContent, linkedParts.join(''));
+            const drugColumnIndices = headerMatch.reduce((acc, th, index) => {
+                const text = th.replace(/<[^>]*>/g, '').trim();
+                if (/医薬品名|一般名|薬剤名|商品名/.test(text)) {
+                    acc.push(index);
                 }
-                return tdMatch;
+                return acc;
+            }, []);
+
+            if (drugColumnIndices.length === 0) return `<div class="table-wrapper">${match}</div>`;
+
+            // Process rows and cells
+            let processedTable = match;
+            const trRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/g;
+            let rowIndex = 0;
+
+            processedTable = processedTable.replace(trRegex, (trMatch) => {
+                // Skip header row
+                if (trMatch.includes('<th')) {
+                    rowIndex++;
+                    return trMatch;
+                }
+
+                const tdRegex = /<td[^>]*>([\s\S]*?)<\/td>/g;
+                let colIndex = 0;
+                const processedTr = trMatch.replace(tdRegex, (tdMatch, tdContent) => {
+                    const currentAnchorCol = colIndex;
+                    colIndex++;
+
+                    if (drugColumnIndices.includes(currentAnchorCol)) {
+                        // Strip all existing HTML tags from the content first to avoid splitting tags like <strong>
+                        const textContent = tdContent.replace(/<[^>]*>/g, '');
+
+                        // Split content by separators (e.g., " / ", "／", "・", "(", ")", "（", "）")
+                        // Use a regex that captures the separators so we can preserve them if needed, 
+                        // or just filter them out for linking.
+                        const parts = textContent.split(/([\/／・（）\(\)])/);
+                        const linkedParts = parts.map(part => {
+                            // If it's a separator, keep it as is
+                            if (/^[\/／・（）\(\)]$/.test(part)) return part;
+
+                            const text = part.trim();
+                            if (text && text.length > 1) {
+                                const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(text)}+添付文書`;
+                                return `<a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="drug-search-link">${part}</a>`;
+                            }
+                            return part;
+                        });
+                        return tdMatch.replace(tdContent, linkedParts.join(''));
+                    }
+                    return tdMatch;
+                });
+
+                rowIndex++;
+                return processedTr;
             });
 
-            rowIndex++;
-            return processedTr;
+            return `<div class="table-wrapper">${processedTable}</div>`;
         });
 
-        return `<div class="table-wrapper">${processedTable}</div>`;
-    });
-
-    // Combine the data with the id and contentHtml
-    return {
-        id,
-        contentHtml,
-        toc, // Return TOC
-        published: matterResult.data.published ?? true,
-        ...matterResult.data,
-    };
+        // Combine the data with the id and contentHtml
+        return {
+            id,
+            contentHtml,
+            toc, // Return TOC
+            published: matterResult.data.published ?? true,
+            ...matterResult.data,
+        };
+    } catch (err) {
+        console.error(`[ERROR - getArticleData] Failed to load data for article "${id}":`, err);
+        throw err; // Re-throw to be caught by page.js
+    }
 }
 
 

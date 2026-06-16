@@ -2,11 +2,11 @@
 const nextConfig = {
     output: 'standalone',
     outputFileTracingIncludes: {
-        '/articles/*': ['./public/data-articles/**/*'],
+        '/articles/[id]': ['./data-articles/**/*'],
+        '/': ['./data-articles/**/*'],
     },
     experimental: {
     },
-    serverExternalPackages: ['remark', 'remark-gfm', 'remark-rehype', 'rehype-slug', 'rehype-stringify', 'gray-matter'],
 };
 
 export default nextConfig;

@@ -1,4 +1,4 @@
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 // ここで各記事をMDからHTMLへ変更
 import { getArticleData, getSortedArticlesData } from '../../lib/articles';
@@ -22,6 +22,7 @@ import InsulinCalc from '../../components/tools/InsulinCalc';
 import CpCalc from '../../components/tools/CpCalc';
 import OpioidCalc from '../../components/tools/OpioidCalc';
 import MedicationHistorySupportTool from '../../components/tools/MedicationHistorySupportTool';
+import RandomArticleLinks from '../../components/homepege/RandomArticleLinks';
 
 export function generateStaticParams() {
     const articles = getSortedArticlesData();
@@ -31,7 +32,45 @@ export function generateStaticParams() {
 }
 export default async function ArticlePage({ params, searchParams }) {
     const { id } = await params;
-    const articleData = await getArticleData(id);
+    const allArticles = getSortedArticlesData();
+    
+    let articleData = null;
+    let errorInfo = null;
+
+    try {
+        console.log(`[DEBUG - ArticlePage] Attempting to load article details for id: "${id}"`);
+        articleData = await getArticleData(id);
+        console.log(`[DEBUG - ArticlePage] getArticleData returned: ${articleData ? 'Data found' : 'null'}`);
+    } catch (e) {
+        console.error(`[CRITICAL - ArticlePage] Error during getArticleData for id "${id}":`, e);
+        errorInfo = {
+            message: e.message,
+            stack: e.stack,
+            step: 'getArticleData'
+        };
+    }
+
+    if (errorInfo) {
+        return (
+            <main style={{ padding: '2rem', color: '#ff4444', fontFamily: 'monospace', background: '#1a1a1a', minHeight: '100vh' }}>
+                <h1 style={{ fontSize: '1.8rem', borderBottom: '1px solid #ff4444', paddingBottom: '0.5rem' }}>
+                    [デバッグ詳細] サーバーエラーが発生しました
+                </h1>
+                <p>この画面はエラーの原因を特定するための一時的なものです。</p>
+                <div style={{ margin: '1.5rem 0' }}>
+                    <strong>エラー発生位置:</strong> {errorInfo.step}<br />
+                    <strong>エラーメッセージ:</strong>
+                    <pre style={{ background: '#2d2d2d', padding: '1rem', borderRadius: '4px', overflow: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-all', color: '#fff' }}>
+                        {errorInfo.stack || errorInfo.message}
+                    </pre>
+                </div>
+                <div style={{ color: '#ccc', fontSize: '0.9rem' }}>
+                    <p><strong>現在の作業ディレクトリ (process.cwd()):</strong> {process.cwd()}</p>
+                    <p><strong>__dirname:</strong> {typeof __dirname !== 'undefined' ? __dirname : 'N/A'}</p>
+                </div>
+            </main>
+        );
+    }
 
     if (!articleData) {
         notFound();
@@ -92,7 +131,7 @@ export default async function ArticlePage({ params, searchParams }) {
             {/* Header / Nav */}
             <Header />
 
-            <article className="container glass-panel" style={{ padding: '2rem' }}>
+            <article className="container glass-panel" style={{ padding: '1rem' }}>
                 {/* Article Header */}
                 <header className="article-info-header" style={{ marginBottom: '2rem', borderBottom: '1px solid hsl(var(--secondary))', paddingBottom: '2rem' }}>
                     <div style={{
@@ -197,6 +236,11 @@ export default async function ArticlePage({ params, searchParams }) {
                 {id === 'opioid-calc' && <OpioidCalc />}
                 <ArticleContent html={articleData.contentHtml} />
             </article>
+
+            <div className="container" style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+                <RandomArticleLinks articles={allArticles} />
+            </div>
+
             <div className="container" style={{ minHeight: '60px', display: 'flex', alignItems: 'center' }}>
                 <Link href="/" className="btn btn-primary back-home-button" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
                     ← ホームに戻る

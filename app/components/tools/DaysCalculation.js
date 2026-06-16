@@ -133,7 +133,7 @@ export default function DaysCalculation() {
 
     // === レンダリング ===
     return (
-        <div className="days-calculation-tool glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
+        <div className="days-calculation-tool glass-panel" style={{ marginBottom: '2rem' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'hsl(var(--primary))' }}>
                 🗓️ 手持ち合わせ・処方日数計算
             </h2>

@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 //カテゴリによって表示する記事を変更
 import Link from 'next/link';
 import ArticleList from '../../components/homepege/ArticleList';
@@ -45,7 +47,7 @@ export default async function CategoryPage({ params }) {
                 </div>
 
                 {categoryArticles.length > 0 ? (
-                    <ArticleList articles={categoryArticles} />
+                    <ArticleList articles={categoryArticles} horizontalScroll={false} />
                 ) : (
                     <div style={{ textAlign: 'center', padding: '3rem', opacity: 0.6 }}>
                         記事が見つかりませんでした。
