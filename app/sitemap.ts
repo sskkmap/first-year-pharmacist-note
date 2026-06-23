@@ -3,7 +3,7 @@ import { getSortedArticlesData } from './lib/articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://first-year-pharmacist-note.site';
-    const articles = getSortedArticlesData();
+    const articles = getSortedArticlesData() as any[];
 
     const articleUrls = articles.map((article) => ({
         url: `${baseUrl}/articles/${article.id}`,
