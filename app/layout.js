@@ -75,12 +75,10 @@ export default function RootLayout({ children }) {
             </Script>
           </>
         )}
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3015895490418469"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+          crossOrigin="anonymous"></script>
       </head>
       <body className={`${inter.variable} ${notoSansJP.variable}`}>
         {children}
