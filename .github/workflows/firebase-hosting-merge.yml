@@ -23,3 +23,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRST_YEAR_PHARMACIST_NOTE }}
           channelId: live
           projectId: first-year-pharmacist-note
+          firebaseToolsVersion: latest
