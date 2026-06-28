@@ -1,6 +1,11 @@
+const startYear = 2022;
+const currentYear = new Date().getFullYear();
+const currentMonth = new Date().getMonth(); // 0 is January, 3 is April
+const yearOfExperience = currentYear - startYear + (currentMonth >= 3 ? 1 : 0);
+
 export const profileData = {
   name: "あおさん",
-  role: "薬剤師5年目",
+  role: `薬剤師${yearOfExperience}年目`,
   bio: "個人在宅をメインとした調剤薬局の薬剤師です。\n実際に私が行った新人教育や研修の実施を行った経験を通して\n全ての薬剤師が安心して業務を行えるようにサイトを作成しました。\n私自身も使いたいなと思えるツールの開発や\n「処方箋から病気を読む」をテーマに、\n若手薬剤師向けの現場で使える実践知識を発信中。",
   avatar: "/placeholder-avatar.png", // Will need a real image or a generated one
 };

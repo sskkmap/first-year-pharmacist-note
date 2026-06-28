@@ -23,6 +23,7 @@ export default function Header() {
                     <Link href="/about" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem', whiteSpace: 'nowrap', flexShrink: 0 }}>サイトについて</Link>
                     <Link href="/image-search" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem', whiteSpace: 'nowrap', flexShrink: 0 }}>画像検索</Link>
                     <Link href="/privacy" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem', whiteSpace: 'nowrap', flexShrink: 0 }}>プライバシーポリシー</Link>
+                    <Link href="/contact" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem', whiteSpace: 'nowrap', flexShrink: 0 }}>お問い合わせ</Link>
                 </nav>
             </div>
         </header>

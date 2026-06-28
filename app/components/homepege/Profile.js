@@ -33,10 +33,24 @@ export default function Profile() {
             <p style={{ color: 'hsl(var(--primary))', fontWeight: '600', marginBottom: '1rem' }}>
                 {profileData.role}
             </p>
-            <p style={{ 
-                maxWidth: '600px', 
-                margin: '0 auto', 
-                color: 'hsl(var(--foreground))', 
+            <h2 style={{ marginBottom: '1.5rem', lineHeight: '1.5' }}>
+                <span style={{ 
+                    fontSize: '1.15rem', 
+                    fontWeight: '700', 
+                    color: 'hsl(210, 80%, 30%)', 
+                    backgroundColor: 'hsl(210, 100%, 94%)', 
+                    padding: '0.4rem 1rem',
+                    borderRadius: '8px',
+                    display: 'inline-block',
+                    border: '1px solid hsl(210, 100%, 88%)'
+                }}>
+                    新人薬剤師・病院薬剤師・薬学生向けの臨床知識をわかりやすく解説
+                </span>
+            </h2>
+            <p style={{
+                maxWidth: '600px',
+                margin: '0 auto',
+                color: 'hsl(var(--foreground))',
                 opacity: 0.8,
                 whiteSpace: 'pre-wrap'
             }}>
