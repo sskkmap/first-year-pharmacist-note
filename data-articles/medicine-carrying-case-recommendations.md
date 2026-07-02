@@ -2,7 +2,7 @@
 slug: "medicine-carrying-case-recommendations"
 title: "【現役薬剤師が解説】外出時の薬持ち運びケースおすすめランキング"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬の持ち運び", "お薬ケース", "服薬管理", "調剤実務", "患者指導"]
 published: false
 description: "外出時の薬の持ち運び、どうしていますか？薬剤師が選ぶ、実用性と衛生面に優れたおすすめのお薬ケースをランキング形式でご紹介します。"

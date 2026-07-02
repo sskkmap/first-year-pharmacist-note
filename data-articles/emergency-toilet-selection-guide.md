@@ -2,7 +2,7 @@
 slug: "emergency-toilet-selection-guide"
 title: "携帯トイレはどれを選ぶ？薬剤師が防災用品を比較してみた"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["携帯トイレ", "防災グッズ", "災害対策", "薬剤師", "備蓄"]
 published: false
 description: "いざという時に困るトイレ問題。現役薬剤師の視点で、携帯トイレの選び方や備えるべきポイントを解説します。"

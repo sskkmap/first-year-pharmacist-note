@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <head>
         {gaId && (
           <>
@@ -75,10 +75,12 @@ export default function RootLayout({ children }) {
             </Script>
           </>
         )}
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3015895490418469"
-          crossOrigin="anonymous"></script>
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.variable} ${notoSansJP.variable}`}>
         {children}

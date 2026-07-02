@@ -2,7 +2,7 @@
 slug: "smooth-pharmaceutical-inquiry"
 title: "疑義照会をスムーズに行うための準備とは"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["疑義照会", "処方監査", "薬剤師スキル", "薬物療法"]
 published: false
 description: "忙しい医師との連携を円滑にする、疑義照会前の準備と効率的な伝え方を現役薬剤師が伝授します。"

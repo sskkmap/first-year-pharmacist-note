@@ -2,7 +2,7 @@
 slug: "pharmacist-insoles-comparison"
 title: "長時間の立ち仕事におすすめのインソールを薬剤師が比較"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師 立ち仕事", "インソール おすすめ", "足の疲れ", "腰痛予防"]
 published: false
 description: "長時間立ちっぱなしの薬剤師に向けて、足の疲労軽減や腰痛対策に効果的なインソールの選び方を現役薬剤師が徹底比較。"

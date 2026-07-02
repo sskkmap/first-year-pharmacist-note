@@ -2,7 +2,7 @@
 slug: "pharmacist-recommended-disaster-backpack"
 title: "薬剤師が選ぶ防災リュックおすすめ5選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["防災リュック", "災害対策", "薬局備蓄", "非常用持ち出し袋", "薬剤師"]
 published: false
 description: "現役薬剤師の視点で、災害時に自分と家族、そして患者さんを守るための「防災リュック」選びと中身のポイントを解説します。"

@@ -2,7 +2,7 @@
 slug: "pharmacist-national-exam-study-tools"
 title: "【現役薬剤師が語る】合格者が実際に使った薬剤師国家試験の対策アイテム5選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師国家試験", "国家試験対策", "勉強法", "合格体験記", "薬剤師国家試験勉強"]
 published: false
 description: "現役薬剤師が国家試験合格に向けて実際に愛用していた、効率的な学習ツールと活用術を紹介。スキマ時間を活用した学習のコツも。"

@@ -2,7 +2,7 @@
 slug: "preparedness-medical-goods-blackout"
 title: "停電時に役立つ医療・衛生グッズを薬剤師が解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["停電", "防災グッズ", "災害対策", "薬剤師", "衛生用品"]
 published: false
 description: "大規模な停電が発生した際、医療現場や在宅患者様がどのような備えをしておくべきか、薬剤師の視点で必要なアイテムと対策を解説します。"

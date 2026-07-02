@@ -2,7 +2,7 @@
 slug: "pharmacist-study-tools-ipad-vs-paper"
 title: "iPad派？紙派？薬剤師が勉強ツールのメリットを比較"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師 勉強法", "iPad 薬剤師", "薬学書", "学習効率", "薬剤師 スキルアップ"]
 published: false
 description: "薬剤師の業務効率と学習スタイルを最大化する！iPad学習と紙の書籍のメリットを徹底比較し、自身のスタイルに最適なツール選びを解説します。"

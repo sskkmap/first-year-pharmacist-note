@@ -2,7 +2,7 @@
 slug: "medication-adherence-tools"
 title: "飲み忘れ防止に役立つ便利グッズおすすめ10選"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["飲み忘れ防止", "服薬アドヒアランス", "残薬管理", "お薬カレンダー", "服薬支援"]
 published: false
 description: "服薬アドヒアランス向上に悩む薬剤師必見！患者さんの飲み忘れを防ぐための便利グッズ10選と、明日から使える現場の工夫を解説します。"

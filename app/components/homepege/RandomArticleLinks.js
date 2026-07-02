@@ -1,13 +1,16 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function RandomArticleLinks({ articles = [] }) {
-    // 記事リストをシャッフルして最大10件抽出
-    const getRandomArticles = (arr, num) => {
-        const shuffled = [...arr].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, num);
-    };
+    const [randomArticles, setRandomArticles] = useState([]);
 
-    const randomArticles = getRandomArticles(articles, 10);
+    useEffect(() => {
+        if (articles.length === 0) return;
+        const shuffled = [...articles].sort(() => 0.5 - Math.random());
+        setRandomArticles(shuffled.slice(0, 10));
+    }, [articles]);
 
     if (randomArticles.length === 0) return null;
 
@@ -42,3 +45,4 @@ export default function RandomArticleLinks({ articles = [] }) {
         </section>
     );
 }
+

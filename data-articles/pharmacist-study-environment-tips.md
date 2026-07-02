@@ -2,7 +2,7 @@
 slug: "pharmacist-study-environment-tips"
 title: "長時間勉強でも疲れにくい！おすすめ学習環境グッズ特集"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師 勉強法", "学習環境", "薬剤師 スキルアップ", "眼精疲労対策", "集中力維持"]
 published: false
 description: "認定薬剤師取得や最新ガイドラインの学習など、忙しい薬剤師が長時間集中して勉強するための環境作りと推奨グッズを紹介します。"

@@ -2,7 +2,7 @@
 slug: "jtas-emergency-triage"
 title: "JTASとは？緊急度判定支援システムをわかりやすく解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["JTAS", "緊急度判定", "トリアージ", "薬剤師", "救急医療"]
 published: false
 description: "救急外来や災害現場で活用される「JTAS」の仕組みを現役薬剤師が解説。緊急度判定支援システムを理解し、多職種連携を円滑にしましょう。"

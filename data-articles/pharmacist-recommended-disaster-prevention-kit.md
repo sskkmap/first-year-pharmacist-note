@@ -2,7 +2,7 @@
 slug: "pharmacist-recommended-disaster-prevention-kit"
 title: "薬剤師が考える「本当に必要な防災グッズ」15選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["防災グッズ", "災害時の薬", "薬剤師の備え", "備蓄医薬品", "お薬手帳"]
 published: false
 description: "災害発生時に薬剤師として何を備えるべきか？「本当に必要な防災グッズ」を、現役薬剤師の視点から厳選して15選紹介します。"

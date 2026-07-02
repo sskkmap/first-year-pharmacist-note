@@ -2,7 +2,7 @@
 slug: "disaster-prevention-hygiene-supplies"
 title: "【薬剤師が教える】停電・断水時も安心！災害時に役立つ衛生用品と備蓄のポイント"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["防災グッズ", "薬剤師", "衛生用品", "災害備蓄"]
 published: false
 description: "災害時の停電や断水を想定し、薬剤師の視点から選ぶべき衛生用品と備蓄の考え方を解説します。"

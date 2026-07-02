@@ -2,7 +2,7 @@
 slug: "medication-packaging-caution"
 title: "一包化だけで安心してはいけない理由とは？"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["一包化", "服薬管理", "薬剤師実務", "残薬", "ヒヤリハット"]
 published: false
 description: "一包化は服薬コンプライアンス向上の強力なツールですが、盲信は禁物です。薬剤師が知っておくべき一包化の落とし穴と、確認すべきポイントを解説します。"

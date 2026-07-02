@@ -2,7 +2,7 @@
 slug: "weekly-pill-organizer-comparison"
 title: "飲み忘れが多い人におすすめの1週間ピルケース比較"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["ピルケース", "服薬管理", "服薬アドヒアランス", "飲み忘れ防止", "薬剤師の業務改善"]
 published: false
 description: "服薬アドヒアランス低下に悩む患者さんに提案したい、1週間ピルケースの選び方と種類を現役薬剤師が比較・解説します。"

@@ -2,7 +2,7 @@
 slug: "medication-notebook-case-ranking"
 title: "お薬手帳ケースおすすめランキング｜薬剤師が使いやすさを比較"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["お薬手帳ケース", "服薬管理", "薬剤師ツール", "患者指導", "お薬手帳"]
 published: false
 description: "現役薬剤師が、患者さんの服薬管理をサポートする「お薬手帳ケース」の選び方とおすすめを紹介。実務での使いやすさを徹底比較します。"

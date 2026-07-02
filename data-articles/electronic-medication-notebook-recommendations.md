@@ -2,7 +2,7 @@
 slug: "electronic-medication-notebook-recommendations"
 title: "薬剤師おすすめの電子お薬手帳アプリと活用グッズまとめ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["電子お薬手帳", "服薬管理", "薬剤師ツール", "患者指導", "DX化"]
 published: false
 description: "患者さんに最適なお薬手帳アプリの提案方法や、指導現場で役立つ活用グッズを現役薬剤師が紹介します。"

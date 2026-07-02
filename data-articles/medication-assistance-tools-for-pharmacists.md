@@ -2,7 +2,7 @@
 slug: "medication-assistance-tools-for-pharmacists"
 title: "薬剤師が実際に患者さんへ紹介した服薬支援グッズまとめ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["服薬支援グッズ", "コンプライアンス向上", "残薬解消", "高齢者支援"]
 published: false
 description: "服薬管理に悩む患者さんへ、現役薬剤師が実際に提案して効果があった服薬支援ツールを厳選して紹介します。"

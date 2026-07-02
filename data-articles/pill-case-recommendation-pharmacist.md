@@ -2,7 +2,7 @@
 slug: "pill-case-recommendation-pharmacist"
 title: "飲み忘れ対策におすすめ！薬剤師が選ぶピルケース10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["ピルケース", "飲み忘れ対策", "服薬コンプライアンス", "薬剤師おすすめ"]
 published: false
 description: "服薬アドヒアランス向上のため、患者さんの生活スタイルに合わせたピルケースの選び方を薬剤師が解説します。"

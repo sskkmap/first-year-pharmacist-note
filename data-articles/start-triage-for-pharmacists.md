@@ -2,7 +2,7 @@
 slug: "start-triage-for-pharmacists"
 title: "START法とは？災害医療におけるトリアージの基本を解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["START法", "トリアージ", "災害医療", "薬剤師", "救急対応"]
 published: false
 description: "災害医療現場で用いられるトリアージ手法「START法」について、薬剤師が知っておくべき判定基準と役割を解説します。"

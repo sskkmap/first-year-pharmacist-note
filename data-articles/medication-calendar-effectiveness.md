@@ -2,7 +2,7 @@
 slug: "medication-calendar-effectiveness"
 title: "お薬カレンダーは本当に効果がある？活用方法を解説"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["お薬カレンダー", "服薬管理", "残薬解消", "在宅医療", "アドヒアランス"]
 published: false
 description: "お薬カレンダーの効果と、患者さんのライフスタイルに合わせた正しい活用方法を薬剤師目線で解説。残薬調整や服薬忘れを防ぐための指導ポイントも紹介します。"

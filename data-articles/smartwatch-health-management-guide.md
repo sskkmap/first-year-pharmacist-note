@@ -2,7 +2,7 @@
 slug: "smartwatch-health-management-guide"
 title: "健康管理に役立つスマートウォッチおすすめランキング"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["スマートウォッチ", "健康管理", "バイタルサイン", "予防医療", "生活習慣病"]
 published: false
 description: "現役薬剤師が選ぶ、日々の健康管理や患者指導に役立つスマートウォッチをランキング形式で解説。心拍数や睡眠分析などのヘルスケア機能を臨床でどう活かすかを紹介します。"

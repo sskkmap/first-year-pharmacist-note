@@ -2,7 +2,7 @@
 slug: "pharmacy-records-guide-for-newbies"
 title: "薬歴に何を書けばいい？新人薬剤師向け記載のコツ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬歴記載", "新人薬剤師", "SOAP形式", "薬学的介入", "監査記録"]
 published: false
 description: "「薬歴に何を書けばいいかわからない」と悩む新人薬剤師へ、SOAP形式のコツと効率的な記載術を現役薬剤師が伝授します。"

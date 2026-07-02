@@ -2,7 +2,7 @@
 slug: "pharmacist-recommended-essentials"
 title: "本当におすすめできる商品だけを薬剤師が厳選してみた"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師おすすめ", "調剤業務効率化", "服薬指導", "ドラッグストア", "業務ツール"]
 published: false
 description: "現役薬剤師が実務の質を上げるために、本当に導入して良かったと感じる厳選アイテムと活用法を解説します。"

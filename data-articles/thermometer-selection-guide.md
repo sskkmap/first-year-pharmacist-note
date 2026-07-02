@@ -2,7 +2,7 @@
 slug: "thermometer-selection-guide"
 title: "家庭用体温計はどれを選ぶ？薬剤師が選び方を解説"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["体温計", "家庭用体温計", "薬剤師", "検温", "医療機器"]
 published: false
 description: "ドラッグストアで患者さんからよく聞かれる「体温計、どれがいいの？」という質問。検温部位ごとの精度の違いや、用途別の選び方を薬剤師の視点で徹底解説します。"

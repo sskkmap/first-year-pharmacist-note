@@ -2,7 +2,7 @@
 slug: "disaster-preparedness-hygiene-essentials"
 title: "災害時にも役立つ衛生用品まとめ：薬剤師が提案する「備えるべき」衛生管理術"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["災害備蓄", "衛生用品", "感染対策", "災害時医療", "薬剤師の備え"]
 published: false
 description: "災害時、避難生活で最も深刻化しやすいのが感染症のリスクです。薬剤師の視点から、非常用持ち出し袋に入れておくべき衛生用品と、その賢い使い方を解説します。"

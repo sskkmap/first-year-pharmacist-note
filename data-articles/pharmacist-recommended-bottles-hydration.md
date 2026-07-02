@@ -2,7 +2,7 @@
 slug: "pharmacist-recommended-bottles-hydration"
 title: "薬剤師が選ぶ水筒おすすめ10選【脱水予防にも】"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["水分補給", "脱水予防", "薬剤師の持ち物", "熱中症対策", "マイボトル"]
 published: false
 description: "現役薬剤師の視点で、調剤室や外来・在宅業務で使いやすい水筒の選び方を解説。脱水予防を習慣化するための機能性ボトル10選を紹介します。"

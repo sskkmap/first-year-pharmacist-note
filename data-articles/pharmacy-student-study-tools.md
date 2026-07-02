@@ -2,7 +2,7 @@
 slug: "pharmacy-student-study-tools"
 title: "薬学生におすすめのタイマー・デスクライトまとめ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬学生", "勉強効率", "集中力アップ", "薬剤師国家試験", "勉強グッズ"]
 published: false
 description: "薬学生の過酷な暗記と計算勉強を効率化する、現役薬剤師が選ぶタイマーとデスクライトの決定版を紹介します。"

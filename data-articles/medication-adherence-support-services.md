@@ -2,7 +2,7 @@
 slug: "medication-adherence-support-services"
 title: "薬剤師に相談できる服薬支援サービスとは？"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["服薬支援サービス", "服薬管理", "残薬解消", "電子お薬手帳", "アドヒアランス"]
 published: false
 description: "薬剤師が知っておくべき、患者さんの服薬を支える最新の支援サービスとツールの選び方を現役薬剤師が徹底解説します。"

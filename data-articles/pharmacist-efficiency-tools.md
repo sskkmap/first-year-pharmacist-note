@@ -2,7 +2,7 @@
 slug: "pharmacist-efficiency-tools"
 title: "「もっと早く買えばよかった」薬剤師の仕事効率化グッズ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師の仕事効率化", "調剤薬局の業務改善", "薬剤師におすすめの文房具", "時短術"]
 published: false
 description: "毎日の忙しい調剤業務を少しでも楽にしたい方へ。現役薬剤師が実際に使って「QOLが爆上がりした」仕事効率化グッズを厳選して紹介します。"

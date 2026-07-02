@@ -2,7 +2,7 @@
 slug: "burn-index-evaluation"
 title: "熱傷指数とは？熱傷重症度の評価方法をわかりやすく解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["熱傷指数", "熱傷重症度", "受傷面積", "II度熱傷", "薬剤師実務"]
 published: false
 description: "熱傷患者さんの重症度評価に必須の「熱傷指数（Burn Index）」について、計算方法から薬剤師が知っておくべき臨床的意義までわかりやすく解説します。"

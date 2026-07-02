@@ -2,7 +2,7 @@
 slug: "medication-adherence-support"
 title: "飲み忘れが減ったら？薬剤師が継続したい支援とは"
 date: "2026-06-27"
-category: "ツール"
+category: "雑談・その他"
 tags: ["服薬アドヒアランス", "残薬管理", "薬剤師支援", "飲み忘れ防止", "処方最適化"]
 published: false
 description: "「薬の飲み忘れ」が解決した後の薬剤師の役割とは？単なる管理から、患者の生活の質を上げる「一歩踏み込んだ継続支援」のコツを解説。"

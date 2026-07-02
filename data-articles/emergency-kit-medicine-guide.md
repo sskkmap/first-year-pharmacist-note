@@ -2,7 +2,7 @@
 slug: "emergency-kit-medicine-guide"
 title: "防災リュックに入れておきたい医薬品とは？薬剤師が教える備蓄のヒント"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["防災リュック", "常備薬", "災害対策", "備蓄医薬品", "薬剤師"]
 published: false
 description: "災害時に備えて準備しておくべき医薬品を薬剤師の視点で解説。使用期限や管理方法など、実務で使えるアドバイスをまとめました。"

@@ -2,7 +2,7 @@
 slug: "medicine-jelly-effectiveness"
 title: "お薬ゼリーは本当に効果的？現役薬剤師が教える服薬補助ゼリーの正しい使い方と注意点"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["お薬ゼリー", "服薬介助", "嚥下困難", "薬剤師", "服薬指導"]
 published: false
 description: "「お薬ゼリーで薬を飲ませても大丈夫？」という疑問にお答えします。成分や飲み合わせ、選び方まで現役薬剤師が徹底解説。"

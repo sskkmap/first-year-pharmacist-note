@@ -2,7 +2,7 @@
 slug: "pharmacist-national-exam-study-environment"
 title: "「集中できない…」国家試験勉強の環境づくりに役立つグッズ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師国家試験", "勉強のコツ", "集中力アップ", "勉強環境", "効率化"]
 published: false
 description: "薬剤師国家試験の合格を目指す方に向け、現役薬剤師が経験に基づいた「集中力を高める環境づくり」と「おすすめグッズ」を厳選してご紹介します。"

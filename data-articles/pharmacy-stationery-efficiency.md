@@ -1,7 +1,7 @@
 slug: "pharmacy-stationery-efficiency"
 title: "薬歴作成を効率化したい人におすすめの文房具10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬歴作成", "効率化", "薬剤師", "文房具", "時短"]
 published: false
 description: "「薬歴が溜まって帰れない…」そんな悩みを抱える薬剤師必見！現役薬剤師が愛用する、薬歴作成を劇的に効率化・時短するための厳選文房具10選を紹介します。"

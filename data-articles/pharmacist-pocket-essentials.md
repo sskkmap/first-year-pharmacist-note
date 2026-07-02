@@ -2,7 +2,7 @@
 slug: "pharmacist-pocket-essentials"
 title: "薬剤師のポケットの中身公開｜便利アイテムを紹介します"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師の持ち物", "調剤薬局", "業務効率化", "薬剤師ツール"]
 published: false
 description: "現役薬剤師の白衣のポケットには何が入っている？業務をスムーズに進めるための必需品や、知る人ぞ知る便利アイテムを公開します。"

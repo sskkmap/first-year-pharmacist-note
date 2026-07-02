@@ -2,7 +2,7 @@
 slug: "useful-tools-for-pharmacists"
 title: "調剤薬局勤務で役立つ便利グッズを薬剤師が厳選紹介"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["調剤薬局", "薬剤師 便利グッズ", "業務効率化", "ピッキング", "薬局実務"]
 published: false
 description: "現役薬剤師が、日々の調剤業務を劇的に改善する「神アイテム」を厳選紹介。業務効率化とミス防止に役立つ必携ツールを徹底解説します。"

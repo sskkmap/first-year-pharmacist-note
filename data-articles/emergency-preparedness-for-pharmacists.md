@@ -2,7 +2,7 @@
 slug: "emergency-preparedness-for-pharmacists"
 title: "停電・断水時に役立つ医療系防災グッズおすすめ10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["防災グッズ", "災害対策", "薬剤師", "薬局管理", "BCP対策"]
 published: false
 description: "災害発生時、薬局で薬剤師は何を準備しておくべきか？停電・断水時に役立つ医療系防災グッズ10選を現役薬剤師が厳選解説します。"

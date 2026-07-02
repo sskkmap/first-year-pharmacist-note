@@ -2,7 +2,7 @@
 slug: "travel-sanitary-goods-pharmacist"
 title: "外出先で役立つ衛生グッズを薬剤師が厳選紹介"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["衛生グッズ", "旅行の持ち物", "感染対策", "薬剤師の視点", "QOL向上"]
 published: false
 description: "薬剤師が選ぶ、外出や旅行に欠かせない衛生グッズを紹介。感染症対策から急なトラブル対応まで、薬局の知見を活かしたおすすめのアイテムを解説します。"

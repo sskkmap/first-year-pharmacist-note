@@ -2,7 +2,7 @@
 slug: "family-first-aid-kit-guide"
 title: "家族みんなで使える救急箱おすすめランキング【薬剤師監修】"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["家庭用常備薬", "救急箱の作り方", "薬の選び方", "薬剤師おすすめ"]
 published: false
 description: "「急な発熱やケガに何を備えるべき？」現役薬剤師が、家族のライフステージに合わせて揃えるべき救急箱の中身を徹底解説します。"

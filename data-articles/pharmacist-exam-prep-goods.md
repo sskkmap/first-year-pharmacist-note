@@ -2,7 +2,7 @@
 slug: "pharmacist-exam-prep-goods"
 title: "Amazonで揃う！薬剤師国家試験対策グッズおすすめランキング"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師国家試験", "勉強法", "合格対策", "Amazonおすすめ"]
 published: false
 description: "現役薬剤師が選ぶ、試験勉強の効率を劇的に高める「神アイテム」をAmazonから厳選してご紹介します。"

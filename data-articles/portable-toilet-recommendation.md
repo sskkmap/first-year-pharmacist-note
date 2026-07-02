@@ -2,7 +2,7 @@
 slug: "portable-toilet-recommendation"
 title: "現役薬剤師が選ぶ「もしも」に備える携帯トイレ10選｜災害・外出時の選び方を解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["携帯トイレ", "防災グッズ", "災害対策", "衛生用品", "薬剤師おすすめ"]
 published: false
 description: "災害時や外出時の不安を解消する「携帯トイレ」。薬剤師の視点から、選び方のポイントとおすすめの製品10選を詳しく解説します。"

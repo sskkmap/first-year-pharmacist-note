@@ -2,7 +2,7 @@
 slug: "disaster-preparedness-medicine-stock"
 title: "災害時の薬不足に備える！薬剤師が勧める備蓄リスト"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["災害時備蓄", "薬の備蓄", "常用薬管理", "災害対策", "薬剤師実務"]
 published: false
 description: "災害時に備えて、薬剤師が患者さんにアドバイスすべき常備薬の備蓄リストと管理のコツを解説します。"

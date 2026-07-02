@@ -2,7 +2,7 @@
 slug: "desk-light-for-pharmacists"
 title: "薬剤師おすすめのデスクライト10選【夜間学習向け】"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師", "学習効率", "デスクライト", "眼精疲労", "勉強法"]
 published: false
 description: "薬剤師の資格試験や日々の薬学研鑽を支える、長時間勉強でも疲れにくいデスクライトを厳選。光の質から選び方までを薬剤師目線で解説します。"

@@ -2,7 +2,7 @@
 slug: "artz-criteria-burn-severity"
 title: "Artz（アーツ）の基準とは？重症度判定の考え方"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["Artzの基準", "熱傷重症度判定", "バーンインデックス", "9の法則", "5の法則"]
 published: true
 description: "熱傷（やけど）の重症度を評価する指標「Artz（アーツ）の基準」について、薬剤師が知っておくべき判定方法やバーンインデックスの計算、適切な外用薬の選択の考え方を解説します。"

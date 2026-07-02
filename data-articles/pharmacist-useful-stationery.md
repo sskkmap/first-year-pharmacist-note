@@ -2,7 +2,7 @@
 slug: "pharmacist-useful-stationery"
 title: "薬剤師の仕事で本当に役立った文房具10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["薬剤師 仕事術", "調剤薬局 業務効率化", "薬剤師 必須アイテム", "文房具 おすすめ"]
 published: false
 description: "現役薬剤師が実務で愛用する、効率化＆ミス防止に役立つ文房具を厳選して紹介。薬局での業務が劇的に快適になるアイテムを10個ピックアップしました。"

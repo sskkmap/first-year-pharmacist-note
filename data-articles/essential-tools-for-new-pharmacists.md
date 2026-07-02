@@ -2,7 +2,7 @@
 slug: "essential-tools-for-new-pharmacists"
 title: "新人薬剤師が最初に買ってよかった仕事グッズ10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["新人薬剤師", "仕事術", "薬剤師グッズ", "調剤効率化", "業務効率"]
 published: false
 description: "新人薬剤師が業務をスムーズに進めるために欠かせない、おすすめの仕事グッズを厳選。実務で役立つ選び方のポイントまで解説します。"

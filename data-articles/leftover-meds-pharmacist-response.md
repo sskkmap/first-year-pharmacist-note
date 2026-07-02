@@ -2,7 +2,7 @@
 slug: "leftover-meds-pharmacist-response"
 title: "残薬がたくさん…そんなとき薬剤師はどう対応する？"
 date: "2026-06-19"
-category: "ツール"
+category: "雑談・その他"
 tags: ["残薬対応 薬剤師", "多剤併用 残薬", "ポリファーマシー 薬剤師", "残薬調整 方法", "服薬アドヒアランス向上"]
 published: false
 description: "なぜ残薬が起こるのか？具体的な介入方法や医師への提案、多職種連携まで、薬剤師が実務で役立つ残薬対応のコツを現役薬剤師が徹底解説します。"

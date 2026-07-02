@@ -2,7 +2,7 @@
 slug: "health-goods-pharmacist-guide"
 title: "薬剤師が患者さんに聞かれやすい健康グッズを徹底解説"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["健康グッズ", "サプリメント", "OTC医療機器", "薬剤師の役割", "セルフケア"]
 published: false
 description: "薬剤師が患者さんからよく質問される健康グッズ（サプリメント、OTC医療機器など）について、その特徴、選び方、アドバイスのポイントを徹底解説します。"

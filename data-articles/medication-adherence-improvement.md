@@ -2,7 +2,7 @@
 slug: "medication-adherence-improvement"
 title: "飲み忘れが増えたら？服薬アドヒアランス改善の工夫"
 date: "2026-06-27"
-category: "ツール"
+category: "雑談・その他"
 tags: ["服薬アドヒアランス", "飲み忘れ防止", "残薬管理", "薬剤師の工夫", "服薬指導"]
 published: false
 description: "服薬アドヒアランスが低下した患者さんに対し、薬剤師ができる具体的かつ実践的な介入方法を解説します。"

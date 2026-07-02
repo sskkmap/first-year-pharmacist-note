@@ -2,7 +2,7 @@
 slug: "crushing-od-tablets-guide"
 title: "OD錠でも粉砕してよいのか？薬剤師が知っておくべき判断基準と安定性データ"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["OD錠", "粉砕", "調剤技術", "安定性", "薬剤師"]
 published: false
 description: "OD錠（口腔内崩壊錠）を粉砕しても良いのか、その判断基準を現役薬剤師が解説。吸湿性や光安定性、味の問題など、実務で役立つ具体的なチェックポイントをまとめました。"

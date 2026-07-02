@@ -2,7 +2,7 @@
 slug: "syrup-dispensing-droppers-guide"
 title: "【現役薬剤師が解説】シロップ薬の計量に便利なスポイト特集"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["シロップ薬", "薬剤師", "計量スポイト", "服薬指導", "小児薬"]
 published: false
 description: "シロップ薬の調剤や服薬指導で欠かせない計量スポイト。材質や形状による違い、使い分けのポイントを現役薬剤師の視点で徹底解説します。"

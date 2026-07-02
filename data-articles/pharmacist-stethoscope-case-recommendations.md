@@ -2,7 +2,7 @@
 slug: "pharmacist-stethoscope-case-recommendations"
 title: "薬剤師が愛用する聴診器ケース・収納グッズまとめ"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["聴診器", "薬剤師ツール", "白衣収納", "聴診器ケース", "仕事効率化"]
 published: false
 description: "聴診器の持ち運びに困っていませんか？現役薬剤師が選ぶ、実用的な聴診器ケースや収納グッズ、保護のコツを徹底解説します。"

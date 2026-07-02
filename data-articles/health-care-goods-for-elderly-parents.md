@@ -2,7 +2,7 @@
 slug: "health-care-goods-for-elderly-parents"
 title: "高齢の親に贈りたい健康管理グッズ特集"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["健康管理グッズ", "高齢者ケア", "血圧計", "フレイル予防", "薬剤師おすすめ"]
 published: false
 description: "遠くに住む親の健康管理、何から始めればいい？薬剤師の視点で「本当に使えて、無理なく習慣化できる」健康管理グッズを選定しました。"

@@ -2,7 +2,7 @@
 slug: "pharmacy-incident-report-management"
 title: "ヒヤリ・ハット事例を医療安全につなげる方法"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["ヒヤリハット", "医療安全", "調剤過誤", "薬剤師業務", "リスクマネジメント"]
 published: false
 description: "ヒヤリ・ハットをただの「ヒヤリ」で終わらせない。明日から使える薬剤師のための再発防止策と、組織全体の安全を高める仕組み作りを解説します。"

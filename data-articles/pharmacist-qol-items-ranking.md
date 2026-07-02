@@ -2,7 +2,7 @@
 slug: "pharmacist-qol-items-ranking"
 title: "新人薬剤師のQOLを上げるおすすめアイテムランキング"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["新人薬剤師", "業務効率化", "薬剤師 QOL", "調剤室アイテム"]
 published: false
 description: "慣れない調剤業務で疲弊していませんか？新人薬剤師のQOLを劇的に改善する、現場で本当に役立つアイテムを現役薬剤師が厳選してご紹介します。"

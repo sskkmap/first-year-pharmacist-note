@@ -2,7 +2,7 @@
 slug: "thermometer-accuracy-comparison"
 title: "非接触体温計と脇式体温計はどちらが正確？"
 date: "2026-06-23"
-category: "ツール"
+category: "雑談・その他"
 tags: ["非接触体温計", "脇式体温計", "体温測定", "薬剤師", "正確性"]
 published: false
 description: "非接触体温計と脇式体温計の精度の違いや、臨床現場での正しい使い分けについて現役薬剤師が解説します。"

@@ -2,7 +2,7 @@
 slug: "pharmaceutical-information-provision-fee"
 title: "服薬情報等提供料を活用した薬剤師の情報発信"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["服薬情報等提供料", "疑義照会", "薬薬連携", "薬剤師の職能"]
 published: false
 description: "服薬情報等提供料を算定し、質の高い情報提供を行うための具体的な活用術を解説。医師との信頼関係を築く報告書の書き方とは。"

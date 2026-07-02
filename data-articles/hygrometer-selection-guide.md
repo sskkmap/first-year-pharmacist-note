@@ -2,7 +2,7 @@
 slug: "hygrometer-selection-guide"
 title: "薬剤師が解説する湿度計・温湿度計の選び方とおすすめ商品"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["湿度計 選び方", "温湿度計 精度", "薬局環境管理", "快適湿度"]
 published: false
 description: "薬局の適切な環境管理のために、薬剤師が知っておくべき湿度計・温湿度計の選び方と精度の見極め方を徹底解説します。"

@@ -2,7 +2,7 @@
 slug: "pharmacist-recommended-health-goods"
 title: "薬剤師が自宅に常備している健康管理グッズ10選"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["セルフケア", "家庭用常備薬", "薬剤師の健康管理", "ヘルスケアグッズ"]
 published: false
 description: "プロの視点で選んだ、自宅にあると安心な健康管理グッズを10個厳選。予防から応急処置まで、薬剤師が愛用する理由を解説します。"

@@ -2,7 +2,7 @@
 slug: "pill-case-recommendation-for-elderly"
 title: "高齢者向けピルケースおすすめランキング｜薬剤師が使いやすさを比較"
 date: "2026-06-20"
-category: "ツール"
+category: "雑談・その他"
 tags: ["高齢者ピルケース", "服薬管理", "残薬解消", "薬剤師ツール", "服薬支援"]
 published: false
 description: "現役薬剤師が、高齢患者さんの服薬管理に役立つピルケース選びのポイントとおすすめを紹介します。"
